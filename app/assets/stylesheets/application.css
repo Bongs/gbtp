@@ -1,0 +1,33 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+.frame { position:relative;border:1px solid #CCC;border-radius:2px;-moz-border-radius:2px; }
+.frame:before
+{
+	position:absolute;
+	content:'';
+	border:2px solid #F2F2F2;
+	height:100%;width:100%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}​
+div.frame img.frameimage
+{
+	min-width:30px;
+	min-height:30px;
+	max-width:150px;
+	max-height:150px;
+}
+.testdiv0{color:blue;}
